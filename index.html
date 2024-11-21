@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Book Store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .top-frame {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        .top-frame .nav-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .left-frame {
+            width: 20%;
+            background-color: #f9f9f9;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .right-frame {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            height: calc(100vh - 50px);
+        }
+    </style>
+</head>
+<body>
+ <div class="top-frame">
+    <div class="logo">LOGO | College Name</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="registration.html">Registration</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="cart.html">Cart</a>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="left-frame">
+            <p><a href="#">CSE</a></p>
+            <p><a href="#">ECE</a></p>
+            <p><a href="#">EEE</a></p>
+            <p><a href="#">CIVIL</a></p>
+        </div>
+        <div class="right-frame">
+            <h1>Welcome to Our Online Bookstore</h1>
+            <p>Browse our categories to find your favorite books.</p>
+        </div>
+    </div>
+</body>
+</html>

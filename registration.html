@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration - Online Book Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="password"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        textarea {
+            resize: none;
+            height: 60px;
+        }
+        .buttons {
+            text-align: center;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail ID:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label>Sex:</label>
+                <input type="radio" name="sex" value="Male"> Male
+                <input type="radio" name="sex" value="Female"> Female
+            </div>
+            <div class="form-group">
+                <label>Date of Birth:</label>
+                <select name="day">
+                    <option value="">Day</option>
+                    <!-- Add day options dynamically if needed -->
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <select name="month">
+                    <option value="">Month</option>
+                    <!-- Add month options dynamically -->
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                </select>
+                <select name="year">
+                    <option value="">Year</option>
+                    <!-- Add year options dynamically -->
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Languages Known:</label>
+                <input type="checkbox" name="languages" value="English"> English
+                <input type="checkbox" name="languages" value="Telugu"> Telugu
+                <input type="checkbox" name="languages" value="Hindi"> Hindi
+                <input type="checkbox" name="languages" value="Tamil"> Tamil
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address"></textarea>
+            </div>
+            <div class="buttons">
+                <button type="reset">Reset</button>
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
